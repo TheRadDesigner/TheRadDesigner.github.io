@@ -1,0 +1,281 @@
+/* Global */
+body {
+  margin: 0;
+  background-color: #2400FF;
+}
+
+/* Background Video */
+.BackgroundContainer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.BackgroundVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* Social Media Sidebar */
+.SocialMediaSidebar {
+  position: fixed;
+  top: 30%;
+  left: 10px;
+  z-index: 1;
+}
+
+.SMSBox {
+  background-color: black;
+  height: 50px;
+  width: 50px;
+  font-size: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 50px;
+  color: white;
+}
+
+.SMSBox:hover {
+  animation: cool 0.8s linear infinite;
+}
+
+@keyframes cool {
+  0% {
+    color: #2400FF;
+  }
+
+  50% {
+    color: #FF0078;
+  }
+
+  100% {
+    color: #2400FF;
+  }
+}
+
+/* Navigation Menu */
+.nav {
+  position: fixed;
+  top: 0;
+  display: flex;
+  background-color: black;
+  font-family: nimbus-sans-extended, sans-serif;
+  height: 50px;
+  width: 100%;
+  z-index: 1;
+}
+
+.nav a {
+  color: white;
+  font-family: nimbus-sans-extended, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 50px;
+}
+
+.navLogo {
+  color: white;
+  flex-grow: 6;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 25px;
+  padding-left: 50px;
+  line-height: 50px;
+}
+
+.navItem {
+  flex-grow: 1;
+}
+
+.navItem a:hover {
+  background-image: url("data:image/svg+xml,%3Csvg  xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='white' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+  background-position: 0 100%;
+  background-size: auto 4px;
+  background-repeat: repeat-x;
+  text-decoration: none;
+}
+
+/* Landing Page */
+.LandingPage {
+  position: relative;
+}
+
+.HeroImage {
+  width: 720px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.HeroImage span {
+  font-family: nimbus-sans-extended, sans-serif;
+  font-weight: 900;
+  font-size: 130px;
+  color: white;
+}
+
+.squiggle {
+  animation: shift 0.5s linear infinite;
+}
+
+@keyframes shift {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-20px);
+  }
+}
+
+/* Lineup screen */
+.Lineup {
+  font-family: nimbus-sans-extended, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  color: white;
+  position: relative;
+}
+
+.LineupContainer {
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.LineupRow {
+  display: flex;
+}
+
+.HeadLine {
+  font-size: 65px;
+  line-height: 100px;
+  margin-right: 30px;
+}
+
+.HeadLine:hover {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .5s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='white' stroke-width='1' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+  background-position: 0 100%;
+  background-size: auto 20px;
+  background-repeat: repeat-x;
+  text-decoration: none;
+}
+
+.MajorAct {
+  font-size: 50px;
+  line-height: 75px;
+  margin-right: 30px;
+}
+
+.MajorAct:hover {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .5s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='white' stroke-width='1' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+  background-position: 0 100%;
+  background-size: auto 12px;
+  background-repeat: repeat-x;
+  text-decoration: none;
+}
+
+.SupportAct {
+  font-size: 23px;
+  line-height: 50px;
+  margin-right: 10px;
+}
+
+.SupportAct:hover {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .4s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='white' stroke-width='1' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+  background-position: 0 100%;
+  background-size: auto 8px;
+  background-repeat: repeat-x;
+  text-decoration: none;
+}
+
+/* Tickets Screen */
+.Tickets {
+  position: relative;
+}
+
+.TicketRow {
+  display: flex;
+  width: 1180px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.TicketCol{
+  width: 440px;
+  padding: 25px;
+  margin: 50px;
+}
+
+.TicketCol img{
+
+}
+
+.Button {
+  background-color: black;
+  font-family: nimbus-sans-extended, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 35px;
+  color: white;
+  text-align: center;
+  padding: 25px;
+  margin: 50px;
+}
+
+.Normie:hover {
+  background-color: white;
+  color: black;
+}
+
+.VIP:hover {
+  animation: YeahBaby 0.1s linear infinite;
+}
+
+@keyframes YeahBaby {
+  0% {
+    background-color: #2400FF;
+    color: white
+  }
+
+  50% {
+    background-color: #FF0078;
+    color: white
+  }
+
+  100% {
+    background-color: #2400FF;
+    color: white
+  }
+}
+
+.Footer {
+  background-color: Black;
+  width: 100%;
+  color: white;
+  font-family: nimbus-sans-extended, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 50px;
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+}
