@@ -1,214 +1,144 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
 
 <head>
-  <link href="css/mainStyles.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.typekit.net/bky1amr.css">
-  <link href="fullPage.js-master/dist/fullpage.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <link href="font/stylesheet.css" rel="stylesheet">
+  <link href="Normalize.css" rel="stylesheet">
+  <link href="Super Form Reset.css" rel="stylesheet">
+
   <script src="https://kit.fontawesome.com/b5b3cdde7f.js" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.js" integrity="sha256-wypDCQw+qwWtdARZAAtUMv/1SWOEB1XHZwAFoNc9Wn8=" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <title>Elektrik Eel Festival</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
 </head>
 
 <body>
 
-  <!-- Background Video -->
-
-  <div class="BackgroundContainer">
-    <video loop muted autoplay class="BackgroundVideo">
-      <source src="img/Video/Background.mp4" type="video/mp4">
-    </video>
-  </div>
-
-  <!-- Social Media Sidebar -->
-
-  <div class="SocialMediaSidebar">
-    <div class="SMSBox">
-      <i class="fab fa-instagram"></i>
+  <div class="covidpopup">
+    <div class="covidpopupheader">
+      Postponed
     </div>
-    <div class="SMSBox">
-      <i class="fab fa-soundcloud"></i>
+    <div class="covidpopuptext">
+      Unfortunately due to Coronavirus social distancing requirements, Elektrik Eel 2020 has been postponed. Please enter your email to be notified when we have a new date.
     </div>
-    <div class="SMSBox">
-      <i class="fab fa-twitter"></i>
-    </div>
-    <div class="SMSBox">
-      <i class="fab fa-facebook-f"></i>
-    </div>
-  </div>
-
-  <!-- Navigation Menu -->
-
-  <div class="nav">
-    <div class="navLogo">
-      ELETRIK EEL
-    </div>
-    <div class="navItem">
-      <a href="#Tickets">Tickets</a>
-    </div>
-    <div class="navItem">
-      <a href="#VIP">VIP Experience</a>
-    </div>
-    <div class="navItem">
-      <a href="#COC">Code Of Conduct</a>
-    </div>
-    <div class="navItem">
-      <a href="#FAQ">FAQ</a>
-    </div>
-  </div>
-
-  <!-- Start FullPage -->
-
-  <div id="fullpage">
-
-    <!-- Landing Page -->
-
-    <div class="LandingPage section">
-      <div class="HeroImage">
-        <span>ELETRIK</span>
-        <svg viewBox='0 0 100 4'>
-          <path fill='none' stroke='white' stroke-width='1' class='squiggle' d='M0,3.5
-              c 5,0,5,-3,10,-3
-              s 5,3,10,3
-              c 5,0,5,-3,10,-3
-              s 5,3,10,3
-              c 5,0,5,-3,10,-3
-              s 5,3,10,3
-              c 5,0,5,-3,10,-3
-              s 5,3,10,3
-              c 5,0,5,-3,10,-3
-              s 5,3,10,3
-              c 5,0,5,-3,10,-3
-              s 5,3,10,3' />
-          <span>EEL</span>
-      </div>
+    <form class="covidpopuprow">
+      <input type="text" class="email" name="email" placeholder="covidsucks@elektrikeel.com.au">
+      <button type="button" class="submit">Submit</button>
+    </form>
     </div>
 
-
-
-    <!-- Lineup screen -->
-
-    <div class="Lineup section">
-      <div class="LineupHeightDivider">
-      </div>
-
-      <div class="LineupContainerRow">
-        <div class="LineupSideDivider">
-        </div>
-        <div class="LineupContainer">
-          <div class="LineupRow">
-            <div class="HeadLine" id="FLUME">
-              FLUME
-            </div>
-            <div class="HeadLine" id="HALSEY">
-              HALSEY
-            </div>
-          </div>
-          <div class="LineupRow">
-            <div class="MajorAct" id="PNAU">
-              PNAU
-            </div>
-            <div class="MajorAct" id="MARLO">
-              MARLO
-            </div>
-            <div class="MajorAct" id="SAFIA">
-              SAFIA
-            </div>
-          </div>
-          <div class="LineupRow">
-            <div class="MajorAct" id="PEKING">
-              PEKING DUK
-            </div>
-            <div class="MajorAct" id="RUFUS">
-              RUFUS
-            </div>
-          </div>
-          <div class="LineupRow">
-            <div class="SupportAct" id="ALLISON">
-              ALLISON WONDERLAND
-            </div>
-            <div class="SupportAct" id="ALEX">
-              ALEX H
-            </div>
-            <div class="SupportAct" id="RUBY">
-              RUBY ROSE
-            </div>
-          </div>
-          <div class="LineupRow">
-            <div class="SupportAct" id="JOEL">
-              JOEL FLETCHER
-            </div>
-            <div class="SupportAct" id="SCNDL">
-              SCNDL
-            </div>
-            <div class="SupportAct" id="LIGHT">
-              LIGHT YEAR
-            </div>
-            <div class="SupportAct" id="KOMES">
-              KOMES
-            </div>
-          </div>
-          <div class="LineupRow">
-            <div class="SupportAct" id="PSYCHEDELIC">
-              PSYCHEDELIC PORN CRUMPETS
-            </div>
-            <div class="SupportAct" id="TIGERLILLY">
-              TIGERLILLY
-            </div>
-          </div>
-        </div>
-        <div class="LineupSideDivider">
-        </div>
-      </div>
-      <div class="LineupHeightDivider">
-      </div>
-    </div>
-
-    <!-- Tickets Screen -->
-
-    <div class="Tickets section">
-      <div class="TicketHeightDivider">
-      </div>
-      <div class="TicketRow">
-        <div class="TicketSideDivider">
-        </div>
-        <div class="TicketCol">
-        <img src="img/Raster/1.png" alt="">
-        <div class="Button Normie">
-          GENERAL<br>ADMISSION
-        </div>
-      </div>
-      <div class="TicketCol">
-        <img src="img/Raster/2.png" alt="">
-        <div class="Button VIP">
-          VIP<br>EXPERIENCE
-        </div>
-        </div>
-        <div class="TicketSideDivider">
-        </div>
-      </div>
-      <div class="TicketHeightDivider">
-      </div>
-      <div class="Footer">
-        &copy; 2020 Eletrik Eel Music Festival
-      </div>
-    </div>
-
-    <!-- End Fullpage -->
 
   </div>
+  <div class="sitecontainer">
+    <div class="desktopnav">
+      <div class="navitem lineup">
+        <u>Line Up </u>
+      </div>
+      <div class="navitem tickets">
+        Tickets
+      </div>
+    </div>
+    <div class="hamburgercontainer">
+      <div class="hamburgertop"></div>
+      <div class="hamburgermiddle"></div>
+      <div class="hamburgerbottom"></div>
+    </div>
+    <div class="mobilenav">
+      <div class="mobilenavitem lineup">
+        Line Up
+      </div>
+      <div class="mobilenavitem tickets">
+        Tickets
+      </div>
+    </div>
 
-  <script type="text/javascript">
-    new fullpage('#fullpage', {
-      anchors: ['Home', 'Lineup', 'Tickets'],
-      css3: true,
-      scrollingSpeed: 1000,
-      responsiveHeight: 330,
-    });
-  </script>
+    <div class="contentcontainer">
+      <div class="lineupcontainer">
+        <div class="mobilelineuplist">
+          <div class="mobilelineuplisttitle">Select Artist</div>
+          <div class="mobilelineuplistitem Flume">Flume</div>
+          <div class="mobilelineuplistitem Halsey">Halsey</div>
+          <div class="mobilelineuplistitem Safia">Safia</div>
+          <div class="mobilelineuplistitem Peking">Peking Duk</div>
+          <div class="mobilelineuplistitem Rufus">Rüfüs Du Sol</div>
+          <div class="mobilelineuplistitem Ruby">Ruby Rose</div>
+          <div class="mobilelineuplistitem Joel">Joel Fletcher</div>
+          <div class="mobilelineuplistitem Scndl">Scndl</div>
+          <div class="mobilelineuplistitem Komes">Komes</div>
+          <div class="mobilelineuplistitem PNAU">PNAU</div>
+        </div>
+        <div class="lineuplist">
+          <div class="lineuplistitem Flume">Flume</div>
+          <div class="lineuplistitem Halsey">Halsey</div>
+          <div class="lineuplistitem Safia">Safia</div>
+          <div class="lineuplistitem Peking">Peking Duk</div>
+          <div class="lineuplistitem Rufus">Rüfüs Du Sol</div>
+          <div class="lineuplistitem Ruby">Ruby Rose</div>
+          <div class="lineuplistitem Joel">Joel Fletcher</div>
+          <div class="lineuplistitem Scndl">Scndl</div>
+          <div class="lineuplistitem Komes">Komes</div>
+          <div class="lineuplistitem PNAU">PNAU</div>
+        </div>
+        <div class="lineupdetailscontainer">
+          <div class="lineupdetailsimage">
+            <img class="artistimage" src="img/flume.jpg" alt="" >
+
+          </div>
+          <div class="lineupdetailtitlerow">
+            <div class="lineupdetailtitle">
+              Flume
+            </div>
+            <div class="lineupdetailssocialcontainer">
+              <div class="lineupdetailssocialmedia">
+                <i class="fab fa-instagram"></i>
+              </div>
+              <div class="lineupdetailssocialmedia">
+                <i class="fab fa-soundcloud"></i>
+              </div>
+              <div class="lineupdetailssocialmedia">
+                <i class="fab fa-twitter"></i>
+              </div>
+              <div class="lineupdetailssocialmedia">
+                <i class="fab fa-facebook-f"></i>
+              </div>
+          </div>
+        </div>
+          <div class="lineupdetailstext">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Velit sed ullamcorper morbi tincidunt ornare massa eget egestas. Luctus accumsan tortor posuere ac ut consequat
+            semper viverra nam. Pharetra convallis posuere morbi leo urna molestie at elementum. Urna neque viverra justo nec. Senectus et netus et malesuada fames. Et sollicitudin ac orci phasellus egestas tellus. Ut aliquam purus sit amet luctus
+            venenatis lectus. Laoreet sit amet cursus sit amet dictum sit amet justo. Lacus sed viverra tellus in hac habitasse platea dictumst vestibulum. Sapien faucibus et molestie ac feugiat sed. Eget sit amet tellus cras adipiscing enim eu
+            turpis egestas. Metus aliquam eleifend mi in nulla posuere sollicitudin. Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio. Vitae purus faucibus ornare suspendisse sed nisi lacus sed. Mauris augue neque gravida in fermentum.
+            Sit amet consectetur adipiscing elit. Aliquam sem et tortor consequat id.
+          </div>
+          </div>
+        </div>
+      </div>
 
 
-
+    <div class="bottombar">
+      <div class="title">
+        Elektrik Eel
+      </div>
+      <div class="bottomsocialmediacontainer">
+        <div class="bottomsocialmedia">
+          <i class="fab fa-instagram"></i>
+        </div>
+        <div class="bottomsocialmedia">
+          <i class="fab fa-soundcloud"></i>
+        </div>
+        <div class="bottomsocialmedia">
+          <i class="fab fa-twitter"></i>
+        </div>
+        <div class="bottomsocialmedia">
+          <i class="fab fa-facebook-f"></i>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 
 </html>
